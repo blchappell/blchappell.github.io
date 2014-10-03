@@ -73,4 +73,13 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+/*End Reset */
+
+body{
+	font-family:Georgia;
+	color:black;
+}
+#topnav{
+	float:left;
+}
 
