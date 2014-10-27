@@ -76,10 +76,92 @@ html[xmlns] .clearfix { display: block; }
 /*End Reset */
 
 body{
+	display:block;
+	margin:0 auto;
+	width:900px;
+	height:1000px;
 	font-family:Georgia;
-	color:black;
+	font-size:12px;
+	text-align:left;
+}
+h2{
+	font-family: georgia;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+}
+img.logo{
+	display:block;
+	margin:0px auto; 
+	padding:10px;
 }
 #topnav{
-	float:left;
+	width:100%;
+	text-align:center;
+	border-bottom:3px solid black;
+	border-top:3px solid black;
+	padding:10px;
+	font-size:20px;
+	text-transform:uppercase;
+	height:100%;
+	margin:10px;
 }
 
+#topnav ul li{
+	display:inline;
+	margin:0 auto;
+	
+}
+nav a{
+	margin:15px;
+	text-decoration:none;
+	color:black;
+}
+div{
+	width:100%;
+	margin:0 auto;
+}
+
+#dogs{
+	clear:both;
+	float:left;
+	width:400px;
+	padding-right:40px;
+}
+img.dogman{
+	display:block;
+	width:400px;
+	height:380px;
+	padding:10px;
+	margin:10px;
+	float:left;
+}
+img.catman{
+	display:block;
+	width:400px;
+	height:380px;
+	padding:10px;
+	margin:10px;
+	float:left;
+}
+#cats{
+	float:left;
+	width:400px;
+	padding-left:40px;
+	
+}
+footer{
+	clear:both;
+	margin:0 auto;
+	border-top:3px;
+	padding-top:30px;
+}
+#source{
+	float:left;
+	text-align:left;
+}
+#copywrite{
+	float:right;
+	text-align:left;
+}
