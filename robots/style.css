@@ -148,6 +148,7 @@ h2{
 	width:50%;
 }
 #footer-wrapper{
+	display:block;
 	background-color:#875c33;
 	clear:both;
 	position:relative;
@@ -155,16 +156,15 @@ h2{
 #footer-contact{
 	width:200px;
 	height:400px;
-	margin-left:180px;
 	position:absolute;
 	top:0;
-	left:0;
+	left:180px;
 }
 #footer-follow{
 	width:200px;
 	position:absolute;
 	top:0;
-	right:0;
+	right:150px;
 }
 #footer-follow li{
 	float:left;
