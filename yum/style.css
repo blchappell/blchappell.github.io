@@ -53,11 +53,69 @@ table {
 
 /* END RESET */
 /* Add Styles Here */
-body { font-family:Times; font-size:14px; }
-section#content { margin:0 auto; width:960px; padding:20px 0px; }
 
-h1 { font-size:42px; font-weight:bold; color:black; text-align:left; }
-h2 { font-size:36px; font-weight:bold; color:black; text-align:left; }
-p { padding-bottom:10px; }
-b {font-weight:bold;}
-i {font-style:italic;}
+body {
+	font-family:sans-serif; 
+	font-size:14px; 
+}
+#content { 
+	margin:0 auto; 
+	width:600px; 
+	padding:20px 0px; 
+}
+div{
+	width:20px;
+	height:60px;
+	background-color:black;
+}
+.header-left{
+	width:100px;
+	float:left;
+	padding-bottom:20px;
+	padding-top:10px;
+}
+.header-right{
+	width:100px;
+	float:right;
+	padding-bottom:20px;
+	padding-top:10px;
+}
+#ingredients{
+	clear:both;
+	float:left;
+	width:30%;
+}
+#ingredients ul {
+	padding:10px;
+}
+#directions{
+	float:right;
+	width:70%;
+}
+#directions ol{
+	padding:10px;
+}
+h3{
+	font-style:italic;
+	padding-bottom:10px;
+}
+footer{
+	clear:both;
+	margin:0 auto;
+	width:600px;
+	position:fixed;
+	bottom:0;
+}
+footer li{
+	background-color:lightgrey;
+	float:left;
+	width:100px;
+	padding:8px;
+	margin:5px;
+}
+a{
+	text-decoration:none;
+	color:grey;
+	font-size:.8em;
+	font-weight:bold;
+}
