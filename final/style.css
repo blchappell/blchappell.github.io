@@ -230,3 +230,10 @@ a {
 #footer ul li:hover{
 	background-color:#4787a4;
 }
+
+.project-view{
+	background-color:#2f3437;
+	height:7000px;
+	padding-top:75px;
+}
+
