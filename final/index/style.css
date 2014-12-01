@@ -236,4 +236,15 @@ a {
 	height:7000px;
 	padding-top:75px;
 }
-
+#project-social{
+	float:right;
+	position:fixed;
+	width:30px;
+	height:100px;
+	top:100px;
+	right:30px;
+}
+#project-social li{
+	padding-bottom:15px;
+	color:#1d262d;
+}
