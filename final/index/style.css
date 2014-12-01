@@ -78,8 +78,8 @@ html[xmlns] .clearfix { display: block; }
 body{
 	margin:0 auto;
 	text-align:center;
-	font-family:sans-serif;
-	width:50%;
+	font-family:'PT Sans', sans-serif;
+	width:100%;
 	background-color:#eee;
 }
 #container{
@@ -113,4 +113,120 @@ a {
 }
 .network{
 	width:10px;
+}
+#logo-wrapper{
+	background-color:white;
+	width:400px;
+	margin:0 auto;
+	margin-top:275px;
+	margin-bottom:275px;
+}
+#logo{
+	padding:40px;
+}
+#top-logo{
+	padding-bottom:10px;
+}
+#name-logo{
+	font-size:1.8em;
+	font-family: 'Quattrocento', serif;
+}
+
+
+#topnav { 
+	top:0;
+	position:fixed;
+	width:100%;
+	height:75px;
+	background-color:rgba(255,255,255,.98);
+	box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}
+.name {
+	font-family: 'Quattrocento', serif;
+	font-size:1.5em;
+	float:left;
+	padding: 25px;
+	
+}
+
+#topnav ul {  
+	float:right;
+    list-style:none;  
+    padding:25px;  
+}
+
+
+#topnav li {  
+    float:left;  
+    display:block;  
+    text-align:center;  
+    position:relative;  
+    padding: 6px 10px;     
+}
+
+#topnav li:hover {  
+    background:#4787a4;
+
+}
+#topnav li a:hover{
+	color:white;
+}
+
+
+#topnav li a {   
+    font-size:14px;  
+    color: gray;  
+    display:block;  
+    outline:0;  
+    text-decoration:none;  
+}
+
+#topnav li ul {
+	display:none;
+	position:absolute;
+	top:20px;
+}
+
+#feature{
+	clear:both;
+}
+
+#work{
+	height:700px;
+	width:85%;
+	margin:0 auto;
+	padding-top:20px;
+}
+.project{
+	padding:5px;
+}
+
+#footer{
+	clear:both;
+	position:relative;
+	background-color:black;
+	height:80px;
+}
+#copyright{
+	font-family: 'Quattrocento', serif;
+	color:white;
+	float:left;
+	padding:25px;
+	padding-top:40px;
+	letter-spacing:.75px;
+	font-size:.8em;
+}
+#footer ul{
+	float:right;
+	padding:25px;
+	padding-top:30px;
+	padding-right:35px;
+}
+#footer ul li{
+	float:left;
+	display:block;
+	padding:0 8px;
+}
+#footer ul li:hover{
+	background-color:#4787a4;
 }
