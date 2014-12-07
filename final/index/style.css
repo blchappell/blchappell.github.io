@@ -75,13 +75,29 @@ html[xmlns] .clearfix { display: block; }
 
 /*End Reset */
 
+#big-container { 
+  background: url(images/birds.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index:-1;
+}
+
 body{
 	margin:0 auto;
 	text-align:center;
 	font-family:'PT Sans', sans-serif;
 	width:100%;
 	background-color:#eee;
+	top:10px;
 }
+
+header{
+	height:680px;
+}
+
+
 #container{
 	margin-top:50%;
 }
@@ -114,15 +130,20 @@ a {
 .network{
 	width:10px;
 }
-#logo-wrapper{
-	background-color:white;
-	width:400px;
-	margin:0 auto;
-	margin-top:275px;
-	margin-bottom:275px;
+
+#logo-wrapper{		
+	position:relative;
 }
 #logo{
+	position:fixed;
+	z-index:0;
+	top:275px;
+	left:30%;
+	width:400px;
+	margin:0 auto;
+	background-color:white;
 	padding:40px;
+
 }
 #top-logo{
 	padding-bottom:10px;
@@ -136,8 +157,8 @@ a {
 	font-family: 'Quattrocento', serif;
 	font-size:1.5em;
 	float:left;
-	padding: 25px;
-	
+	padding: 18px;
+	color:black;
 }
 /* 	--------------------
 	Sticky Headers (2) 
@@ -149,13 +170,16 @@ a {
 
 /* Start "topnav" */
 #main-content{
+	background-color:#eee;
 	z-index:100;
+	height:950px;
+	padding-top:50px;
 }
 #topnav { 
 	top:0;
 	position:fixed;
 	width:100%;
-	height:75px;
+	height:60px;
 	background-color:rgba(255,255,255,.98);
 	box-shadow: 0 2px 2px rgba(0,0,0,.1);
 	display:none;
@@ -166,7 +190,7 @@ a {
 #topnav ul {  
 	float:right;
     list-style:none;  
-    padding:25px;  
+    padding:18px;  
 }
 
 
@@ -175,15 +199,14 @@ a {
     display:block;  
     text-align:center;  
     position:relative;  
-    padding: 6px 10px;     
+    padding: 12px 10px;     
 }
 
-#topnav li:hover {  
-    background:#4787a4;
-
+#topnav li:hover{
+	border-bottom:solid rgba(0,0,0,.6) 4px
 }
 #topnav li a:hover{
-	color:white;
+	color:#4787a4;
 }
 
 
@@ -198,7 +221,6 @@ a {
 #topnav li ul {
 	display:none;
 	position:absolute;
-	top:20px;
 }
 
 /* End "topnav" */
@@ -209,14 +231,14 @@ a {
 	top:0;
 	position:fixed;
 	width:100%;
-	height:75px;
+	height:60px;
 	background-color:rgba(255,255,255,.98);
 	box-shadow: 0 2px 2px rgba(0,0,0,.1);
 }
 #topnav2 ul {  
 	float:right;
     list-style:none;  
-    padding:25px;  
+    padding:18px;  
 }
 
 
@@ -225,15 +247,14 @@ a {
     display:block;  
     text-align:center;  
     position:relative;  
-    padding: 6px 10px;     
+    padding: 12px 10px;     
 }
 
-#topnav2 li:hover {  
-    background:#4787a4;
-
+#topnav2 li:hover{
+	border-bottom:solid rgba(0,0,0,.6) 4px
 }
 #topnav2 li a:hover{
-	color:white;
+	color:#4787a4;
 }
 
 
@@ -248,9 +269,7 @@ a {
 #topnav2 li ul {
 	display:none;
 	position:absolute;
-	top:20px;
 }
-
 /* End "topnav2" */
 
 
@@ -272,39 +291,43 @@ a {
 	clear:both;
 	position:relative;
 	background-color:black;
-	height:75px;
+	height:110px;
 	width:100%;
+	bottom:0;
 }
 #copyright{
 	font-family: 'Quattrocento', serif;
 	color:white;
 	float:left;
 	padding:25px;
-	padding-top:40px;
+	padding-top:50px;
 	letter-spacing:.75px;
 	font-size:.8em;
 }
 #footer ul{
 	float:right;
 	padding:25px;
-	padding-top:30px;
+	padding-top:40px;
 	padding-right:35px;
 }
 #footer ul li{
 	float:left;
 	display:block;
 	padding:0 8px;
+
 }
 #footer ul li:hover{
 	background-color:#4787a4;
+	border-radius:50%;
 }
 
 .project-view{
 	background-color:#2f3437;
 	height:7000px;
-	padding-top:75px;
+	padding-top:60px;
 }
 #project-social{
+	display:none;
 	float:right;
 	position:fixed;
 	width:30px;
@@ -318,20 +341,21 @@ a {
 }
 
 
-
 /* Common style grid */
 .grid {
 	margin: 0 auto;
-	padding: 1em;
+	
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
 	height:600px;
+	z-index:100;
+	background-color:#eee;
 }
 .grid figure {
 	position: relative;
 	overflow: hidden;
-	margin: 10px 1%;
+	margin: 5px;
 	text-align: center;
 	cursor: pointer;
 	display:inline-block;
@@ -370,16 +394,19 @@ a {
 /***** Lily *****/
 /*---------------*/
 
+
 figure.effect-lily img {
 	max-width: none;
 	width: -webkit-calc(100% + 50px);
 	width: calc(100% + 50px);
-	opacity: 0.98;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	opacity: 1;
+	-webkit-transition: opacity 1.5s, -webkit-transform 1.5s;
+	transition: opacity 1.5s, transform 1.5s;
 	-webkit-transform: translate3d(-40px,0, 0);
 	transform: translate3d(-40px,0,0);
-	-webkit-filter: opacity(.6);
+	-webkit-filter: grayscale; /*sepia, hue-rotate, invert....*/
+	-webkit-filter: brightness(95%); 
+	
 }
 
 
@@ -392,6 +419,7 @@ figure.effect-lily figcaption {
 	position:absolute;
 	right:10px;
 	bottom:20px;
+	/*background-color:rgba(0,0,0,.3);*/
 }
 
 figure.effect-lily figcaption > div {
@@ -405,7 +433,9 @@ figure.effect-lily figcaption > div {
 figure.effect-lily h2{
 		font-family: 'Quattrocento', serif;
 		font-size:1.2em;
-		color:black;
+		color:white;
+		-webkit-transform: translate3d(0,60px,0);
+		transform: translate3d(0,60px,0);
 }
 figure.effect-lily p {
 	font-size:.8em;
@@ -414,8 +444,8 @@ figure.effect-lily p {
 }
 
 figure.effect-lily h2 {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
 	padding-bottom:3px;
 }
 
@@ -447,8 +477,6 @@ figure.effect-lily:hover p {
 figure.effect-lily:hover p {
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
-	-webkit-transition-duration: 0.35s;
-	transition-duration: 0.35s;
+	-webkit-transition-duration: 0.65s;
+	transition-duration: 0.65s;
 }
-
-
