@@ -314,8 +314,7 @@ a {
 
 }
 #footer ul li:hover{
-	background-color:#4787a4;
-	border-radius:50%;
+	background-color:gray;
 }
 
 /* Common style grid */
