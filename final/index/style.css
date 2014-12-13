@@ -558,6 +558,8 @@ figure.effect-lily:hover p {
 	color:gray;
 	float:left;
 	padding:10px;
+	padding-left:50px;
+	letter-spacing:.2px;
 }
 #resume{
 	clear:left;
